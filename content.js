@@ -52,7 +52,14 @@ function spawnCardInElements(elements) {
             // Using getElementsByTagName()
             var cite = element.getElementsByTagName("cite")[0];
 
-            var linkText = element.getElementsByTagName("cite")[0].textContent;
+            var linkText = ''
+            try {
+                linkText = element.getElementsByTagName("cite")[0].textContent;
+            } catch (error) {
+                console.log(error)
+            }
+
+
 
 
             if (childElements[j].tagName === "IMG" && linkText.includes("youtube.com") || linkText.includes("vimeo.com")) {
@@ -72,9 +79,8 @@ function spawnCardInElements(elements) {
                 }
 
                 break;
-            } else {
+            } else if (cite) {
                 cite.style.marginLeft = '8px';
-                break;
             }
         }
     }
