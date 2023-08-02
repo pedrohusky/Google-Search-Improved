@@ -57,7 +57,6 @@ function spawnCardInElements(elements) {
 
             if (childElements[j].tagName === "IMG" && linkText.includes("youtube.com") || linkText.includes("vimeo.com")) {
 
-
                 // Get the parent div element
                 var parentDiv = childElements[j].parentNode;
                 parentDiv = parentDiv.parentNode;
@@ -75,6 +74,7 @@ function spawnCardInElements(elements) {
                 break;
             } else {
                 cite.style.marginLeft = '8px';
+                break;
             }
         }
     }
