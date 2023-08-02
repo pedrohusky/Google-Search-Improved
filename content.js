@@ -22,7 +22,7 @@ function spawnCardInElements(elements) {
 
         // If not processed, apply the "cardView" styles
         element.style.borderRadius = '10px';
-        element.style.boxShadow = '0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)';
+        element.style.boxShadow = '0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19)';
         element.style.padding = '10px';
         element.style.margin = '15px 0';
         element.style.backgroundColor = 'rgba(0, 0, 0, 0)';
