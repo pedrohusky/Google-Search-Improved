@@ -23,7 +23,7 @@ function spawnCardInElements(elements) {
         // If not processed, apply the "cardView" styles
         element.style.borderRadius = '10px';
         element.style.padding = '10px';
-        element.style.margin = '15px 0';
+        element.style.margin = '25px 0';
         element.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         element.style.transition = 'all 0.3s ease-in-out';  // Ensure smooth transition effects
         element.style.overflow = 'hidden';
@@ -33,7 +33,7 @@ function spawnCardInElements(elements) {
 
         if (isDarkMode) {
             // If dark mode, set boxShadow to a lighter color
-            element.style.boxShadow = '0 2px 20px 0 rgba(255, 255, 255, 0.2), 0 2px 2px 0 rgba(255, 255, 255, 0.19)';
+            element.style.boxShadow = '0 2px 15px 0 rgba(255, 255, 255, 0.2), 0 2px 2px 0 rgba(255, 255, 255, 0.19)';
         } else {
             // If light mode, set boxShadow to a darker color
             element.style.boxShadow = '0 2px 20px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19)';
@@ -57,7 +57,6 @@ function spawnCardInElements(elements) {
 
             if (childElements[j].tagName === "IMG" && linkText.includes("youtube.com") || linkText.includes("vimeo.com")) {
 
-                cite.style.marginBottom = '10px';
 
                 // Get the parent div element
                 var parentDiv = childElements[j].parentNode;
@@ -75,8 +74,7 @@ function spawnCardInElements(elements) {
 
                 break;
             } else {
-                cite.style.marginLeft = '10px';
-                break;
+                cite.style.marginLeft = '8px';
             }
         }
     }
